@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header Panel (North) -->
+        <header class="header">
+            <div class="header-main-row">
+                <h1 id="app-title">📋 To Do List</h1>
+                <div class="header-controls">
+                    <input type="text" id="search-input" class="input-modern search-input"
+                        placeholder="Find a project... 🔍" autocomplete="off">
+                    <div class="filter-wrapper">
+                        <select id="filter-combo">
+                            <option value="All">All</option>
+                            <option value="Active">Active</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="header-stats-row">
+                <span class="header-stats" id="stats-label">0 projects · 0 tasks</span>
+            </div>
+
+            <!-- Global Stats Summary Panel -->
+            <div class="global-stats-summary">
+                <div class="stat-item">
+                    <span class="stat-icon">📊</span>
+                    <span class="stat-text"><span id="global-done-percent">0%</span> Done</span>
+                </div>
+                <div class="stat-divider">|</div>
+                <div class="stat-item">
+                    <span class="stat-icon">⏰</span>
+                    <span class="stat-text"><span id="global-overdue-count">0</span> Overdue</span>
+                </div>
+                <div class="stat-divider">|</div>
+                <div class="stat-item">
+                    <span class="stat-icon">✅</span>
+                    <span class="stat-text"><span id="global-tasks-ratio">0/0</span> Tasks</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Cards List Panel (Center) -->
+        <main class="cards-scroll-area" id="cards-container">
+            <!-- Dynamic project cards will be generated here -->
+        </main>
+
+        <!-- Bottom Input Panel (South) -->
+        <div class="bottom-panel">
+            <div class="project-input-card">
+                <select id="project-emoji" class="input-modern emoji-select">
+                    <option value="🏕️">🏕️</option>
+                    <option value="🚀">🚀</option>
+                    <option value="🎨">🎨</option>
+                    <option value="📝">📝</option>
+                    <option value="💻">💻</option>
+                    <option value="🛒">🛒</option>
+                    <option value="🍔">🍔</option>
+                </select>
+                <input type="text" id="project-input" class="input-modern" placeholder="Create a new project..."
+                    autocomplete="off">
+                <button id="add-project-btn" class="btn-accent btn-add-project">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

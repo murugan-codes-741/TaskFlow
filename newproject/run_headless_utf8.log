@@ -1,0 +1,8 @@
+﻿java : Error: Could not find or load main class .awt.headless=true
+At line:1 char:1
++ java -Djava.awt.headless=true TodoApp > run_headless.log 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error: Could no...t.headless=true:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Caused by: java.lang.ClassNotFoundException: /awt/headless=true
